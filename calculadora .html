@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+fieldset{background-color:aqua;width:200px;heigth:300px;}
+body{background-color:teal;}
+#button{background-color:aqua;color:black;heigth:70px;width:70px;font-size:30px;border:inset;font-family:Verdana,Arial,sans-serif;cursor:pointer;}
+.button:hover{background-color:purple;color:yellow;width:50px;heigth:50px;font-size:30px;cursor:pointer;}
+#display{color:yellow;background-color:navy;width:200px;heigth:70px;font-size:60px;border-color:yellow;}
+#reset{color:white;width:120px;heigth:100px;font-size:50px;border:blue;font-family:Tahoma,Arial,sans-serif;}
+</style>
+</head>
+<body> 
+<fieldset>
+<center>
+<form name="calculator">
+<input id="display"type="text"name="shadow"readonly="readonly">
+<br><br>
+<input id="button" type="button"value="1"onclick="calculator.shadow.value +='1'">
+<input id="button" type="button"value="2"onclick="calculator.shadow.value +='2'">
+<input id="button" type="button"value="3"onclick="calculator.shadow.value +='3'">
+<input id="button" type="button"value="4"onclick="calculator.shadow.value +='4'">
+<input id="button" type="button"value="5"onclick="calculator.shadow.value +='5'">
+<input id="button" type="button"value="6"onclick="calculator.shadow.value +='6'">
+<input id="button" type="button"value="7"onclick="calculator.shadow.value +='7'">
+<input id="button" type="button"value="8"onclick="calculator.shadow.value +='8'">
+<input id="button" type="button"value="9"onclick="calculator.shadow.value +='9'">
+<input id="button" type="button"value="0"onclick="calculator.shadow.value +='0'">
+<br>
+<input class="button"type="button"value="*" onclick="calculator.shadow.value +='*'">
+<input class="button"type="button"value="/" onclick="calculator.shadow.value +='/'">
+<input class="button"type="button"value="+" onclick="calculator.shadow.value +='+'">
+<input class="button"type="button"value="-" onclick="calculator.shadow.value +='-'">
+<input class="button"type="button"value="%" onclick="calculator.shadow.value +='%'">
+<input class="button"type="button"value="." onclick="calculator.shadow.value +='.'">
+<input class="button"type="button"value="=" onclick="calculator.shadow.value=eval(calculator.shadow.value )">
+<input id="reset"type="reset"value="c" onclick="calculator.shadow.value +=' '">
+</form>
+</center>
+</fieldset>
+</body>
+</html>
